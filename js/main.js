@@ -151,11 +151,6 @@ document.getElementById("playAgainBtn").onclick = () => {
   winOrLossParent.classList.toggle("hide");
 }
 
-// Close Window Button
-document.getElementById("closeGame").onclick = () => {
-  window.close();
-}
-
 // Save Score Data
 function saveScoreData() {
   sessionStorage.setItem("score", JSON.stringify(scoreNum.textContent));
