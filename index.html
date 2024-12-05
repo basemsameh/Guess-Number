@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Guess Number</title>
+  </head>
+  <body>
+    <!--  CONTAINER -->
+    <div class="container">
+      <!-- Header for start game -->
+      <header>
+        <h2 id="score" class="bg-white rounded-4 p-4 fs-1 mb-5 fw-bold">
+          Score <br> <span id="scoreNum" class="text-success mx-auto d-block mt-2">0</span>
+        </h2>
+        <h1 class="text-center">Guess Number</h1>
+      </header>
+      <!-- Start Game Button -->
+      <button
+        id="startGameBtn"
+        class="btn mx-auto d-block btn-light fw-medium px-4 py-3 fs-5 mt-5"
+      >
+        Start Game
+      </button>
+      <!-- Main for play game -->
+      <main class="mt-5">
+        <!-- Part of guess number ( for user ) -->
+        <form action="#" id="formGuessNum" class="mx-auto hide">
+          <div class="row mb-4">
+            <p class="fs-4 text-center text-md-start fw-medium col-12 col-md-5" id="rangeMessage"></p>
+            <p class="col-12 col-md-7 text-center text-md-end fw-medium fs-4">
+              Tries: <span class="tries fs-6"></span>
+            </p>
+          </div>
+          <div class="input-group p-2 rounded-2 bg-white">
+            <input
+              type="number"
+              name="guess-num"
+              id="guess-num"
+              class="form-control shadow-none border-0"
+              placeholder="Your Guess"
+            />
+            <button
+              class="btn btn-primary px-4 fs-5"
+              id="submitBtn"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+          <p id="messageToUser" class="fs-5 mt-4 fw-bold"></p>
+          <!-- Hint Message -->
+          <p class="fs-5">
+            <strong>Hint:</strong> 
+            You will lose 5 points from your score if you lose the game.
+          </p>
+        </form>
+        <!-- Show Levels to user -->
+        <article id="levelsParent" class="row hide">
+          <h2 class="text-white">Select Level: </h2>
+          <!-- Easy -->
+          <div class="level col-12 col-md-4 p-3">
+            <div class="rounded-4 bg-white p-4" data-target="easy">
+              <h3 class="text-center fw-bold border-bottom pb-2 border-black">Easy</h4>
+              <p class="fs-5 fw-medium">Range: 1 to 50</p>
+              <p class="fs-5 fw-medium">Tries: 10</p>
+              <p class="fs-5 fw-medium">Points: +5</p>
+            </div>
+          </div>
+          <!-- Medium -->
+          <div class="level col-12 col-md-4 p-3">
+            <div class="rounded-4 bg-white p-4" data-target="medium">
+              <h3 class="text-center fw-bold border-bottom pb-2 border-black">Medium</h3>
+              <p class="fs-5 fw-medium">Range: 1 to 100</p>
+              <p class="fs-5 fw-medium">Tries: 7</p>
+              <p class="fs-5 fw-medium">Points: +10</p>
+            </div>
+          </div>
+          <!-- Hard -->
+          <div class="level col-12 col-md-4 p-3">
+            <div class="rounded-4 bg-white p-4" data-target="hard">
+              <h3 class="text-center fw-bold border-bottom pb-2 border-black">Hard</h3>
+              <p class="fs-5 fw-medium">Range: 1 to 200</p>
+              <p class="fs-5 fw-medium">Tries: 5</p>
+              <p class="fs-5 fw-medium">Points: +15</p>
+            </div>
+          </div>
+        </article>
+        <!-- Win Or Loss Message -->
+        <article id="winOrLossParent" class="hide">
+          <h2 class="text-center fw-medium" id="winOrLossMsg"></h2>
+          <h3 class="text-center fw-medium my-4" id="randomNumber"></h3>
+          <div class="d-flex mx-auto" id="btns">
+            <button id="playAgainBtn" class="btn btn-light px-4 py-3 mx-2 rounded-3 fs-5 fw-medium">
+              Play Again
+            </button>
+            <button id="closeGame" class="btn btn-light px-4 py-3 mx-2 rounded-3 fs-5 fw-medium">
+              Close Game
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
