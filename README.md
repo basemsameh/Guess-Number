@@ -1,4 +1,4 @@
-# **Guess the Number Game**
+# Guess the Number Game
 
 A simple and interactive "Guess the Number" game built using **HTML**, **CSS**, **Bootstrap**, and **JavaScript**. Players can choose from different difficulty levels, guess the number within the specified range, and earn points based on their performance.
 
