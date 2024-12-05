@@ -46,15 +46,11 @@ A simple and interactive "Guess the Number" game built using **HTML**, **CSS**, 
 1. Open the game in your browser.
 2. Click Start Game.
 3. Choose a difficulty level:
-
-- Easy, Medium, or Hard.
-
+  - Easy, Medium, or Hard.
 4. Enter your guess within the specified range.
 5. Submit your guess:
-
-- Correct guesses earn points.
-- Hints guide you for incorrect guesses.
-
+  - Correct guesses earn points.
+  - Hints guide you for incorrect guesses.
 6. Win or lose, play again or close the game.
 
 ## Technologies Used
